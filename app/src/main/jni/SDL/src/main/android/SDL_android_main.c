@@ -86,7 +86,7 @@ SDL_Window *window;
     if(SDL_CreateWindowAndRenderer(0, 0, 0, &window, &renderer) < 0)
         exit(2);
 
-	Sprite sprite = LoadSprite("image.bmp", renderer);
+	Sprite sprite = LoadSprite("/sdcard/image.bmp", renderer);
     if(sprite.texture == NULL)
         exit(2);
 
